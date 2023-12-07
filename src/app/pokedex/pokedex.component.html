@@ -1,0 +1,64 @@
+<div style="background-color:rgb(132, 213, 213)">
+<div *ngIf="pokemonList.length > 0">
+  <div style="text-align: center;font-family: fantasy;color:tomato;font-size: 32px;">
+    <h2 style="padding: 0;margin: 0;">Pokédex</h2>
+    </div>
+    <div class="pokemon-card-container">
+      <div class="pokemon-card" *ngFor="let pokemon of pokemonList">
+        <mat-card class="box" data-aos="zoom-in-right" data-aos-delay="200">
+          <mat-card-header>
+            <div mat-card-avatar class="pokemon-image"></div>
+            <mat-card-title style="font-family: fantasy;color:tomato;font-size: 18;">{{ pokemon.name }}</mat-card-title>
+            <mat-card-subtitle style="font-family: fantasy;color:teal;font-size: 18;" >Type: Fighter</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="/assets/img/{{pokemon.name}}.png" alt="{{ pokemon.name }} Image">
+          <mat-card-content>
+            <div style="font-family: fantasy; font-size: 14px; color: #333;">
+              <p>Description: Lorem ipsum, dolor sit amet consectetur <br>adipisicing elit. Vel, fugit.. </p>
+            </div>
+          </mat-card-content>
+          <mat-card-actions style="text-align: center;">
+            <button mat-button color="primary" class="btn-buy" (click)="viewPokemonDetails(pokemon.url)">View Details</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  
+  <div *ngIf="pokemonList.length === 0">
+    <p>Loading Pokémon...</p>
+  </div>
+</div>
+  
+
+
+
+  
+
+  <!-- <div class="card">
+    <input type="radio" name="select" id="slide_1" checked>
+    <input type="radio" name="select" id="slide_2">
+    <input type="radio" name="select" id="slide_3">
+    <input type="checkbox" id="slideImg">
+  
+    <div class="slider">
+      <label for="slide_1" class="slide slide_1"></label>
+      <label for="slide_2" class="slide slide_2"></label>
+      <label for="slide_3" class="slide slide_3"></label>
+    </div>
+  
+    <div class="inner_part" *ngFor="let pokemon of pokemonList" >
+      <label for="slideImg" class="img">
+        <img class="img_1" src="https://c4.wallpaperflare.com/wallpaper/978/131/617/kiz-kulesi-turkey-istanbul-maiden-s-tower-wallpaper-preview.jpg">
+      </label>
+      <div class="content content_1" *ngFor="let pokemon of pokemonList">
+        <div class="title"> {{ pokemon.name }}</div>
+        <div class="text">
+          Istanbul, a fascinating city built on two Continents, divided by the Bosphorus Strait. This is one of the greatest cities in the world.
+        </div>
+        <button>Read More</button>
+      </div>
+    </div>
+  
+    
+  </div> -->

@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+.main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+}
+.ul-div{
+    display: flex;
+    list-style: none;
+}
+.ul-div>li{
+    padding: 5px;
+}
