@@ -1,0 +1,32 @@
+.btn-buy {
+    display: inline-block;
+    padding: 10px 40px 12px 40px;
+    border-radius: 50px;
+    border: 2px solid tomato;
+    color: tomato;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  .btn-buy:hover {
+    background: tomato;
+    color: #fff;
+  }  
+  /* style="background-color: tomato;height:200px;width:400px;display: grid;grid-template-columns: 1fr 1fr;padding: 2rem;" */
+  .card {
+    padding: 20px;
+    background:rgb(132, 213, 213);
+    /* text-align: center; */
+    border-radius: 8px;
+    /* position: relative;
+    overflow: hidden; */
+    border: 2px solid #f9f9f9;
+    width: 400px;
+ 
+    display: flex;
+    /* flex-direction: column;  */
+    /* height: 500px;  */
+    /* position: relative; */
+  }

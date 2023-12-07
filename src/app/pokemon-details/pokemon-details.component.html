@@ -1,0 +1,28 @@
+<!-- <p>pokemon-details works!</p> -->
+<div style="text-align: center;">
+    
+    <h2 style="text-align: center;font-family: fantasy;color:tomato;font-size: 44px;">{{name}}</h2>
+</div>
+<div style="    display: grid;
+grid-template-columns: auto auto;    grid-gap: 5rem">
+    <div>
+        <img style="height: 500px;" src="/assets/img/{{name}}.png" alt="">
+    </div>
+    <div>
+        <h3  style="font-family:monospace;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet neque debitis velit dolorum dolore, earum soluta adipisci labore nam consequatur temporibus voluptate, quam tempora omnis.</h3>
+        <h3  style="font-family:monospace;">version : {{version}}</h3>
+        <div class="card" >
+            <div style="font-family:monospace;">
+                <h2>Height :{{height}}</h2>
+                <h2>Weight :{{weight}}</h2>
+                <h2>Gender : Unknown</h2>
+            </div>
+            <div  style="font-family:monospace;">
+                <h2>Category : Generic </h2>
+                <h2>Ability : {{ability}}</h2>
+            </div>
+        </div>
+        <h4  style="font-family:monospace; font-size: 18px;">type</h4>
+        <button  class="btn-buy" style="font-family:monospace;">{{type}}</button>
+    </div>
+</div>
